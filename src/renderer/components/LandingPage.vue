@@ -24,17 +24,28 @@
           <button class="alt" @click="open('https://electron.atom.io/docs/')">Electron</button>
           <button class="alt" @click="open('https://vuejs.org/v2/guide/')">Vue.js</button>
         </div>
+        <div class="doc">
+          <a-slider id="test" :default-value="30" :disabled="disabled" />
+        </div>
       </div>
     </main>
   </div>
 </template>
 
 <script>
+  /* eslint-disable */
+
   import SystemInformation from './LandingPage/SystemInformation'
 
   export default {
     name: 'landing-page',
     components: { SystemInformation },
+    data () {
+
+      return {
+        disabled: true
+      }
+    },
     methods: {
       open (link) {
         this.$electron.shell.openExternal(link)

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a-button type="primary">Button</a-button>
+
     <div class="title">Information</div>
     <div class="items">
       <div class="item">
