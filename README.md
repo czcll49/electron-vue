@@ -1,4 +1,4 @@
-# electron-vue-demo
+# electron-vue
 
 > An electron-vue project
 
